@@ -2,7 +2,8 @@
 
 Crawler.py
 ----------------
-keywords according to petlist.txt. For ambiguous name, I add dog/cat as suffix. 10950 pages in totall, stored in 0_data/index - 36_data/index
+keywords according to petlist.txt. For ambiguous name, I add dog/cat as suffix. 
+10950 pages in totall, stored in 0_data/index - 36_data/index
 
 invertedindex
 ---------------------
