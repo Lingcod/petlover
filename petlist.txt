@@ -1,0 +1,37 @@
+0 American Bulldog
+1 American Pit Bull Terrier
+2 Basset Hound
+3 Beagle dog
+4 Boxer dog
+5 Chihuahua dog
+6 English Cocker Spaniel
+7 English Setter
+8 German Shorthaired
+9 Great Pyrenees
+10 Havanese Dog
+11 Japanese Chin
+12 Keeshond
+13 Leonberger
+14 Miniature Pinscher
+15 Newfoundland
+16 Pomeranian Dog
+17 Pug Dog
+18 Saint Bernard
+19 Samoyed
+20 Scottish Terrier
+21 Shiba Inu
+22 Staffordshire Bull Terrier
+23 Wheaten Terrier
+24 Yorkshire Terrier
+25 Abyssinian Cat
+26 Bengal Cat
+27 Birman Cat
+28 Bombay cat
+29 British Shorthair
+30 Egyptian Mau
+31 Maine Coon
+32 Persian Cat
+33 Ragdoll Cat
+34 Russian Blue Cat
+35 Siamese Cat
+36 Sphynx Cat
