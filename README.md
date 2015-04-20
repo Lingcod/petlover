@@ -1,9 +1,11 @@
 # petlover
 
-* Crawler.py *
+Crawler.py
+===============
 keywords according to petlist.txt. For ambiguous name, I add dog/cat as suffix. 10950 pages in totall, stored in 0_data/index - 36_data/index
 
-* invertedindex *
+invertedindex
+================
  - Gernerated by Microsoft Visual Studio
  - Build up by 3 projects: invertedindex, mergesort and query
  - [All inputs and outputs file in google drive](https://drive.google.com/file/d/0BxQ3OgSlSbhCYXBQTzZxYUNGaTA/view?usp=sharing)
