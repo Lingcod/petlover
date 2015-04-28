@@ -1,0 +1,1813 @@
+{
+	"american bulldog": {
+		"alias": null,
+		"origin": [
+			"united states"
+		],
+		"category": [
+			"molosser"
+		],
+		"weight": {
+			"male":{
+				"amin": 70,
+				"amax": 130
+			},
+			"female":{
+				"amin": 60,
+				"amax": 90
+			}
+		},
+		"height": {
+			"male":{
+				"amin": 20,
+				"amax": 28
+			},
+			"female":{
+				"amin": 20,
+				"amax": 24
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "harsh."
+			},
+		"color": {
+			"feature":[
+				"solid",
+				"patches"
+			],
+			"colors": [
+				"white",
+				"brown"
+			],
+			"description": "all white or white with patches of red or varying degrees of brown, brindle, or fawn."
+		},
+		"littersize": {
+			"amin": 7,
+			"amax": 14
+		},
+		"lifespan": {
+			"amin": 10,
+			"amax":15
+		}
+		
+	},
+	"american pit bull terrier": {
+		"alias": [
+			"apbt",
+			"pit bull",
+			"pit"
+		],
+		"origin": [
+			"united states",
+			"united kingdom"
+		],
+		"category": "terrier",
+		"weight": {
+			"male": {
+				"amin": 35,
+				"amax": 60
+			},
+			"female": {
+				"amin": 30,
+				"amax": 50
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 18,
+				"amax": 21
+			},
+			"female": {
+				"amin": 17,
+				"amax": 20
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "smooth, thin single coat."
+
+		},
+		"color": null,
+		"littersize": {
+			"amin": 5,
+			"amax": 10
+		},
+		"lifespan": {
+			"amin": 8,
+			"amax": 15
+		}
+		
+	},
+	"basset hound": {
+		"alias": [
+			"basset",
+			"hush puppy"
+		],
+		"origin": [
+			"united kingdom",
+			"france"
+		],
+		"category": "hound",
+		"weight": {
+			"male": {
+				"amin": 55,
+				"amax": 75
+			},
+			"female": {
+				"amin": 45,
+				"amax": 65
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 12,
+				"amax": 15
+			},
+			"female": {
+				"amin": 11,
+				"amax": 14
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "smooth, short and close."
+		},
+		"color": {
+			"feature":[
+				"tricolor",
+				"bicolor"
+			],
+			"colors": [
+				"black",
+				"white",
+				"tan"
+			],
+			"description": "generally black, white and tan (tricolor) or tan/lemon and white (bicolor); but any recognized hound color acceptable."
+		},
+		"littersize": {
+			"amin": 6,
+			"amax": 8
+		},
+		"lifespan": {
+			"amin": 11,
+			"amax": 12
+		}
+	},
+	"beagle": {
+		"alias": [
+			"english beagle"
+		],
+		"origin": [
+			"united kingdom"
+		],
+		"category": "hound",
+		"weight": {
+			"male": {
+				"amin": 22,
+				"amax": 25
+			},
+			"female": {
+				"amin": 20,
+				"amax": 23
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 13,
+				"amax": 16
+			},
+			"female": {
+				"amin": 13,
+				"amax": 16
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "short haired, hard coat of medium length."
+		},
+		"color": {
+			"feature":[
+				"tricolor"
+			],
+			"colors": [
+				"white",
+				"black",
+				"tan",
+				"brown"
+			],
+			"description": "tricolor or white in combination with black & tan/brown or brown/tan."
+		},
+		"littersize": {
+			"amin": 2,
+			"amax": 14
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"boxer": {
+		"alias": [
+			"german boxer",
+			"deutscher boxer"
+		],
+		"origin": [
+			"germany"
+		],
+		"category": [
+			"working",
+			"utility",
+			"guardian"
+		],
+		"weight": {
+			"male": {
+				"amin": 60,
+				"amax": 70
+			},
+			"female": {
+				"amin": 55,
+				"amax": 60
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 22,
+				"amax": 25
+			},
+			"female": {
+				"amin": 21,
+				"amax": 24
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "short, shiny, smooth, close-lying"
+		},
+		"color": {
+			"feature":[
+				"brindle"
+			],
+			"colors": [
+				"fawn",
+				"black",
+				"white"
+			],
+			"description": "fawn or brindle, black mask, with or without white markings, and white."
+		},
+		"littersize": {
+			"amin": 6,
+			"amax": 8
+		},
+		"lifespan": {
+			"amin": 9,
+			"amax": 10
+		}
+	},
+	"chihuahua": {
+		"alias": null,
+		"origin": [
+			"mexico"
+		],
+		"category": "toy",
+		"weight": {
+			"male": {
+				"amin": 4,
+				"amax": 6
+			},
+			"female": {
+				"amin": 4,
+				"amax": 6
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 6,
+				"amax": 10
+			},
+			"female": {
+				"amin": 6,
+				"amax": 10
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "smooth coat or long coat."
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"marked",
+				"splashed",
+				"spotted"
+			],
+			"colors": [
+				"white",
+				"black",
+				"tan"
+			],
+			"description": "white, black, tan and many other colors."
+		},
+		"littersize": {
+			"amin": 2,
+			"amax": 5
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 20
+		}
+	},
+	"english cocker spaniel": {
+		"alias": [
+			"cocker spaniel"
+		],
+		"origin": [
+			"united kingdom"
+		],
+		"category": [
+			"sporting",
+			"gundog"
+		],
+		"weight": {
+			"male": {
+				"amin": 29,
+				"amax": 32
+			},
+			"female": {
+				"amin": 29,
+				"amax": 32
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 15,
+				"amax": 16
+			},
+			"female": {
+				"amin": 15,
+				"amax": 16
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": null
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"roan",
+				"tricolor",
+				"ticked"
+			],
+			"colors": [
+				"black",
+				"white",
+				"brown"
+			],
+			"description": "they come in solid, particolored, and roan types of markings. "
+		},
+		"littersize": {
+			"amin": 1,
+			"amax": 7
+		},
+		"lifespan": {
+			"amin": 11,
+			"amax": 12
+		}
+	},
+	"german shorthaired": {
+		"alias": [
+			"german shorthaired pointer"
+		],
+		"origin": [
+			"germany"
+		],
+		"category": [
+			"sporting",
+			"gundog"
+		],
+		"weight": {
+			"male": {
+				"amin": 55,
+				"amax": 70
+			},
+			"female": {
+				"amin": 45,
+				"amax": 60
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 24,
+				"amax": 26
+			},
+			"female": {
+				"amin": 23,
+				"amax": 25
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "short and flat with a dense undercoat protected by stiff guard hairs."
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"ticked"
+			],
+			"colors": [
+				"brown",
+				"black",
+				"white"
+			],
+			"description": "dark brown, black, or either liver and white or black and white. "
+		},
+		"littersize": {
+			"amin": 7,
+			"amax": 12
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"great pyrenees": {
+		"alias": null,
+		"origin": [
+			"france",
+			"spain"
+		],
+		"category": [
+			"working",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 110,
+				"amax": 120
+			},
+			"female": {
+				"amin": 85,
+				"amax": 100
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 27,
+				"amax": 32
+			},
+			"female": {
+				"amin": 25,
+				"amax": 29
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "long, flat, thick, outer coat of coarse hair, straight or slightly undulating, and lying over a dense, fine, woolly undercoat."
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"white"
+			],
+			"description": "the main coat color is white and can have varying shades of gray, red, or tan around the face, ears and sometimes on the body and tail. "
+		},
+		"littersize": {
+			"amin": 7,
+			"amax": 10
+		},
+		"lifespan": {
+			"amin": 10,
+			"amax": 11
+		}
+	},
+	"havanese": {
+		"alias": [
+			"havanese cuban bichon",
+			"havaneser"
+		],
+		"origin": [
+			"cuba"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 7,
+				"amax": 14
+			},
+			"female": {
+				"amin": 7,
+				"amax": 14
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 9,
+				"amax": 11
+			},
+			"female": {
+				"amin": 9,
+				"amax": 11
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "very soft double coat"
+		},
+		"color": null,
+		"littersize": {
+			"amin": 1,
+			"amax": 9
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 16
+		}
+	},
+	"japanese chin": {
+		"alias": [
+			"japanese spaniel",
+			"chin"
+		],
+		"origin": [
+			"japan"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 7,
+				"amax": 9
+			},
+			"female": {
+				"amin": 7,
+				"amax": 9
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 8,
+				"amax": 11
+			},
+			"female": {
+				"amin": 8,
+				"amax": 11
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "only over coat"
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"black",
+				"white",
+				"tan"
+			],
+			"description": "black and white, sable (black and white with tan points), or red and white."
+		},
+		"littersize": {
+			"amin": 1,
+			"amax": 3
+		},
+		"lifespan": {
+			"amin": 10,
+			"amax": 12
+		}
+	},
+	"keeshond": {
+		"alias": [
+			"dutch barge dog",
+			"smiling dutchman",
+			"kees"
+		],
+		"origin": [
+			"netherlands"
+		],
+		"category": [
+			"non-sporting",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 15,
+				"amax": 20
+			},
+			"female": {
+				"amin": 15,
+				"amax": 20
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 17,
+				"amax": 19
+			},
+			"female": {
+				"amin": 16,
+				"amax": 18
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "double"
+		},
+		"color": {
+			"feature":[
+				"mixture"
+			],
+			"colors": [
+				"grey",
+				"black",
+				"cream"
+			],
+			"description": "mixture of grey and black."
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 8
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 14
+		}
+	},
+	"leonberger": {
+		"alias": [
+			"leo",
+			"gentle lion",
+			"gentle giant"
+		],
+		"origin": [
+			"germany"
+		],
+		"category": [
+			"working",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 120,
+				"amax": 170
+			},
+			"female": {
+				"amin": 100,
+				"amax": 135
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 28,
+				"amax": 31
+			},
+			"female": {
+				"amin": 25,
+				"amax": 29
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "straight, lies flat, and fits close"
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"yellow",
+				"brown"
+			],
+			"description": "all combinations of lion-yellow, red, red-brown, and sand."
+		},
+		"littersize": {
+			"amin": 6,
+			"amax": 14
+		},
+		"lifespan": {
+			"amin": 7,
+			"amax": 9
+		}
+	},
+	"miniature pinscher": {
+		"alias": [
+			"king of the toys"
+		],
+		"origin": [
+			"germany"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 8,
+				"amax": 10
+			},
+			"female": {
+				"amin": 8,
+				"amax": 10
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 10,
+				"amax": 12
+			},
+			"female": {
+				"amin": 10,
+				"amax": 12
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "short and smooth, with no undercoat."
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"red",
+				"fawn",
+				"black"
+			],
+			"description": "solid red, stag red, blue stag red, chocolate stag red, fawn stag red, as well as black, chocolate, blue, and fawn with tan points or rust points."
+		},
+		"littersize": {
+			"amin": 1,
+			"amax": 4
+		},
+		"lifespan": {
+			"amin": 10,
+			"amax": 14
+		}
+	},
+	"newfoundland": {
+		"alias": [
+			"newfie"
+		],
+		"origin": [
+			"canada"
+		],
+		"category": [
+			"working",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 132,
+				"amax": 154
+			},
+			"female": {
+				"amin": 100,
+				"amax": 121
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 29,
+				"amax": 30
+			},
+			"female": {
+				"amin": 26,
+				"amax": 27
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "thick and straight"
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"patches"
+			],
+			"colors": [
+				"black",
+				"brown",
+				"grey"
+			],
+			"description": "black, brown, beige, black-and-white patches and gray"
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 12
+		},
+		"lifespan": {
+			"amin": 8,
+			"amax": 10
+		}
+	},
+	"pomeranian": {
+		"alias": [
+			"pompom"
+		],
+		"origin": [
+			"germany"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 4,
+				"amax": 7
+			},
+			"female": {
+				"amin": 4,
+				"amax": 7
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 5,
+				"amax": 11
+			},
+			"female": {
+				"amin": 5,
+				"amax": 11
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "abundant textured coat "
+		},
+		"color": {
+			"feature":[
+				"spotted",
+				"brindle"
+			],
+			"colors": [
+				"black",
+				"brown",
+				"red",
+				"orange",
+				"cream",
+				"tan",
+				"white"
+			],
+			"description": "including white, black, brown, red, orange, cream, blue, sable, black and tan, brown and tan, spotted, brindle, plus combinations of those colors."
+		},
+		"littersize": {
+			"amin": 2,
+			"amax": 3
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 16
+		}
+	},
+	"pug": {
+		"alias": [
+			"chinese pug"
+		],
+		"origin": [
+			"china"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 13,
+				"amax": 20
+			},
+			"female": {
+				"amin": 13,
+				"amax": 18
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 12,
+				"amax": 14
+			},
+			"female": {
+				"amin": 10,
+				"amax": 12
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "smooth and glossy"
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"fawn",
+				"black"
+			],
+			"description": "fawn, apricot fawn, silver fawn or black"
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 5
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"saint bernard": {
+		"alias": [
+			"saint"
+		],
+		"origin": [
+			"italy",
+			"switzerland"
+		],
+		"category": [
+			"working",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 140,
+				"amax": 264
+			},
+			"female": {
+				"amin": 140,
+				"amax": 264
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 28,
+				"amax": 36
+			},
+			"female": {
+				"amin": 28,
+				"amax": 36
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "either smooth or rough"
+		},
+		"color": {
+			"feature":[
+				"brindle"
+			],
+			"colors": [
+				"red",
+				"white"
+			],
+			"description": "red color with white, or sometimes a mahogany brindle with white."
+		},
+		"littersize": {
+			"amin": 6,
+			"amax": 8
+		},
+		"lifespan": {
+			"amin": 8,
+			"amax": 10
+		}
+	},
+	"samoyed": {
+		"alias": [
+			"smiley"
+		],
+		"origin": [
+			"russia"
+		],
+		"category": [
+			"working",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 45,
+				"amax": 65
+			},
+			"female": {
+				"amin": 35,
+				"amax": 50
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 20,
+				"amax": 22
+			},
+			"female": {
+				"amin": 18,
+				"amax": 20
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "dense, double layer"
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"white"
+			],
+			"description": ""
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 13
+		}
+	},
+	"scottish terrier": {
+		"alias": [
+			"scottie"
+		],
+		"origin": [
+			"united kingdom"
+		],
+		"category": [
+			"terrier"
+		],
+		"weight": {
+			"male": {
+				"amin": 19,
+				"amax": 22
+			},
+			"female": {
+				"amin": 18,
+				"amax": 21
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 9,
+				"amax": 10
+			},
+			"female": {
+				"amin": 9,
+				"amax": 10
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "double (hard wiry & soft under coat)"
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"brindle"
+			],
+			"colors": [
+				"black",
+				"wheaten"
+			],
+			"description": "dark gray to jet black and brindle, a mix of black and brown."
+		},
+		"littersize": {
+			"amin": 1,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 11,
+			"amax": 13
+		}
+	},
+	"shiba inu": {
+		"alias": [
+			"shiba"
+		],
+		"origin": [
+			"japan"
+		],
+		"category": [
+			"non-sporting",
+			"utility"
+		],
+		"weight": {
+			"male": {
+				"amin": 21,
+				"amax": 22
+			},
+			"female": {
+				"amin": 17,
+				"amax": 18
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 14,
+				"amax": 17
+			},
+			"female": {
+				"amin": 13,
+				"amax": 16
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "double"
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"red",
+				"black",
+				"tan",
+				"white"
+			],
+			"description": "red, black and tan, or sesame (red with black-tipped hairs),[7] with a cream, buff, or grey undercoat."
+		},
+		"littersize": {
+			"amin": 2,
+			"amax": 4
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"staffordshire bull terrier": {
+		"alias": [
+			"staffy",
+			"staffy bull"
+		],
+		"origin": [
+			"united kingdom"
+		],
+		"category": [
+			"terrier"
+		],
+		"weight": {
+			"male": {
+				"amin": 29,
+				"amax": 37
+			},
+			"female": {
+				"amin": 24,
+				"amax": 34
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 14,
+				"amax": 16
+			},
+			"female": {
+				"amin": 14,
+				"amax": 16
+			}
+		},
+		"coat": {
+			"length": "short",
+			"description": "smooth, short and close"
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"brindle"
+			],
+			"colors": [
+				"red",
+				"fawn",
+				"white",
+				"black"
+			],
+			"description": "red, fawn, white, black or blue, or any one of these colours with white. any shade of brindle or any shade of brindle with white"
+		},
+		"littersize": {
+			"amin": 5,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 14
+		}
+	},
+	"wheaten terrier": {
+		"alias": [
+			"irish soft-coated wheaten terrier"
+		],
+		"origin": [
+			"ireland"
+		],
+		"category": [
+			"terrier"
+		],
+		"weight": {
+			"male": {
+				"amin": 35,
+				"amax": 45
+			},
+			"female": {
+				"amin": 35,
+				"amax": 45
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 17,
+				"amax": 19
+			},
+			"female": {
+				"amin": 17,
+				"amax": 19
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "soft and silky, loosely waved or curly"
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"white",
+				"brown"
+			],
+			"description": "wheaten or rust color"
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 7
+		},
+		"lifespan": {
+			"amin": 10,
+			"amax": 12
+		}
+	},
+	"yorkshire terrier": {
+		"alias": [
+			"yorkie"
+		],
+		"origin": [
+			"united kingdom"
+		],
+		"category": [
+			"toy"
+		],
+		"weight": {
+			"male": {
+				"amin": 4,
+				"amax": 7
+			},
+			"female": {
+				"amin": 4,
+				"amax": 7
+			}
+		},
+		"height": {
+			"male": {
+				"amin": 6,
+				"amax": 7
+			},
+			"female": {
+				"amin": 6,
+				"amax": 7
+			}
+		},
+		"coat": {
+			"length": "long",
+			"description": "glossy, fine, straight, and silky"
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"grey",
+				"tan",
+				"black"
+			],
+			"description": null
+		},
+		"littersize": {
+			"amin": 2,
+			"amax": 5
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"abyssinian": {
+		"alias": null,
+		"origin": [
+			"egypt"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 9,
+				"amax": 16
+			},
+			"female": {
+				"amin": 8,
+				"amax": 12
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": null
+		},
+		"color": {
+			"feature":[
+				"ticked",
+				"solid"
+			],
+			"colors": [
+				"brown",
+				"fawn",
+				"blue"
+			],
+			"description": null
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 4
+		},
+		"lifespan": {
+			"amin": 9,
+			"amax": 15
+		}
+	},
+	"bengal": {
+		"alias": null,
+		"origin": [
+			"united states"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 10,
+				"amax": 15
+			},
+			"female": {
+				"amin": 8,
+				"amax": 10
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": null
+		},
+		"color": {
+			"feature":[
+				"spotted"
+			],
+			"colors": [
+				"brown"
+			],
+			"description": "brown, seal lynx point, mink, sepia, silver"
+		},
+		"littersize": {
+			"amin": 1,
+			"amax": 9
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 16
+		}
+	},
+	"birman": {
+		"alias": [
+			"sacred cat of burma"
+		],
+		"origin": [
+			"france"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 10,
+				"amax": 15
+			},
+			"female": {
+				"amin": 6,
+				"amax": 10
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "long",
+			"description": "silky texture"
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"white",
+				"cream",
+				"blue",
+				"red"
+			],
+			"description": "the base body colour is white to cream, with a wash of color that corresponds to the points but is much paler."
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 16
+		}
+	},
+	"bombay": {
+		"alias": null,
+		"origin": [
+			"united states"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 9,
+				"amax": 11
+			},
+			"female": {
+				"amin": 6,
+				"amax": 9
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": "close-lying, sleek and glossy"
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"black"
+			],
+			"description": null
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 15,
+			"amax": 20
+		}
+	},
+	"british shorthair": {
+		"alias": null,
+		"origin": [
+			"united kingdom"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 15,
+				"amax": 20
+			},
+			"female": {
+				"amin": 9,
+				"amax": 13
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": "dense, plush"
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"colorprint",
+				"tabby",
+				"bicolor"
+			],
+			"colors": [
+				"black",
+				"blue",
+				"white",
+				"red",
+				"silver",
+				"golden",
+				"fawn"
+			],
+			"description": "black, blue, white, red, cream, silver, golden, cinnamon and fawn, either solid or in colourpoint, tabby, shaded and bicolour patterns."
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 5
+		},
+		"lifespan": {
+			"amin": 14,
+			"amax": 20
+		}
+	},
+	"egyptian mau": {
+		"alias": null,
+		"origin": [
+			"italy"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 10,
+				"amax": 14
+			},
+			"female": {
+				"amin": 6,
+				"amax": 10
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": "silky, fine texture"
+		},
+		"color": {
+			"feature":[
+				"spotted"
+			],
+			"colors": [
+				"silver",
+				"bronze",
+				"smoke",
+				"black",
+				"blue"
+			],
+			"description": "silver, bronze, smoke, black and blue/pewter."
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 18,
+			"amax": 20
+		}
+	},
+	"maine coon": {
+		"alias": [
+			"coon cat",
+			"maine cat",
+			"american longhair"
+		],
+		"origin": [
+			"united states"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 15,
+				"amax": 25
+			},
+			"female": {
+				"amin": 10,
+				"amax": 15
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "long",
+			"description": "soft and silky"
+		},
+		"color": {
+			"feature":[
+				"ticked",
+				"solid"
+			],
+			"colors": null,
+			"description": "any colors that other cats have."
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 15
+		}
+	},
+	"persian": {
+		"alias": [
+			"persian longhair"
+		],
+		"origin": [
+			"iran"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 8,
+				"amax": 10
+			},
+			"female": {
+				"amin": 7,
+				"amax": 9
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "long",
+			"description": null
+		},
+		"color": null,
+		"littersize": {
+			"amin": 3,
+			"amax": 9
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 17
+		}
+	},
+	"ragdoll": {
+		"alias": null,
+		"origin": [
+			"united states"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 12,
+				"amax": 20
+			},
+			"female": {
+				"amin": 8,
+				"amax": 15
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "long",
+			"description": null
+		},
+		"color": {
+			"feature":[
+				"pointed",
+				"mitted",
+				"bicolor",
+				"tabby"
+			],
+			"colors": [
+				"red",
+				"cream",
+				"blue",
+				"chocolate",
+				"seal",
+				"lilac"
+			],
+			"description": " red, seal, chocolate and the corresponding dilutes, including blue, lilac, and cream"
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 4
+		},
+		"lifespan": {
+			"amin": 12,
+			"amax": 17
+		}
+	},
+	"russian blue": {
+		"alias": null,
+		"origin": [
+			"russian"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 7,
+				"amax": 10
+			},
+			"female": {
+				"amin": 5,
+				"amax": 8
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": "two layers of short thick fur"
+		},
+		"color": {
+			"feature":[
+				"solid"
+			],
+			"colors": [
+				"blue",
+				"grey"
+			],
+			"description": "bluish-gray that is the dilute expression of the black gene. "
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 5
+		},
+		"lifespan": {
+			"amin": 15,
+			"amax": 20
+		}
+	},
+	"siamese": {
+		"alias": null,
+		"origin": [
+			"thailand"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 9,
+				"amax": 14
+			},
+			"female": {
+				"amin": 6,
+				"amax": 10
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "short",
+			"description": null
+		},
+		"color": {
+			"feature":null,
+			"colors": [
+				"seal",
+				"blue",
+				"chocolate",
+				"lilac"
+			],
+			"description": null
+		},
+		"littersize": {
+			"amin": 3,
+			"amax": 6
+		},
+		"lifespan": {
+			"amin": 9,
+			"amax": 15
+		}
+	},
+	"sphynx": {
+		"alias": null,
+		"origin": [
+			"canada"
+		],
+		"category": [
+			"cat"
+		],
+		"weight": {
+			"male": {
+				"amin": 8,
+				"amax": 11
+			},
+			"female": {
+				"amin": 6,
+				"amax": 8
+			}
+		},
+		"height": null,
+		"coat": {
+			"length": "lack",
+			"description": "lack of a coat"
+		},
+		"color": {
+			"feature":[
+				"solid",
+				"pointed",
+				"tabby"
+			],
+			"colors": null,
+			"description": null
+		},
+		"littersize": {
+			"amin": 4,
+			"amax": 4
+		},
+		"lifespan": {
+			"amin": 8,
+			"amax": 14
+		}
+	}
+}
