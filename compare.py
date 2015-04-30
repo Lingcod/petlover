@@ -10,14 +10,26 @@ def readjson():
 	return j
 
 
+#return -1 if 1.len(list)!=3, 2.one or more petname can't be find in json, 3.a mix of dog and cat in list
 def similarity(j, list):
 	sim1 = { "origin":[], "category":[], "weight":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "height":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "coat":{"length":None, "description":None}, "color":{"feature":[], "colors":[], "description":None}, "littersize":{"amin":0, "amax":0}, "lifespan":{"amin":0, "amax":0} }
 	sim2 = { "origin":[], "category":[], "weight":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "height":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "coat":{"length":None, "description":None}, "color":{"feature":[], "colors":[], "description":None}, "littersize":{"amin":0, "amax":0}, "lifespan":{"amin":0, "amax":0} }
+
+	if len(list) != 3:
+		print "list size must be 3"
+		return -1
+	if set(list).issubset(set(j.keys()))==False :
+		print list, "one or more petname cannot be find in json"
+		return -1
+
 	score1 = simscore(petA = j[list[0]], petB = j[list[1]], sim = sim1, is2nd = False)
 	score2 = simscore(petA = j[list[2]], petB = sim1, sim = sim2, is2nd = True)
+	if score1 == -1 or score2 == -1:
+		print "Wrong input. There is a mix of cat and dog"
+		return -1
 	return sim2
 
-# Dog and cat: -1
+# Calculate a score for given petA and pet B. Store shared features in sim. Return score. Dog and cat: -1
 def simscore(petA, petB, sim, is2nd):
 	score = 0
 
@@ -25,6 +37,8 @@ def simscore(petA, petB, sim, is2nd):
 	if petA["category"] and petB["category"]:
 		if (petA["category"][0] == "cat" and petB["category"][0] != "cat") or (petA["category"][0] != "cat" and petB["category"][0] == "cat"):
 			return -1
+	elif (petA["category"] and petA["category"][0] == "cat") or (petB["category"] and petB["category"][0] == "cat"):
+		return -1;
 
 	#origin country. +number*1
 	sim["origin"] = [val for val in petA["origin"] if val in petB["origin"]]
@@ -113,22 +127,33 @@ def simscore(petA, petB, sim, is2nd):
 
 	return score
 
+#find 3 other similar pets for given features. return a dictionary sorted by key(i.e score value, ascending), only contains 3 results.
 def findsims(j, sim):
 	simlist = {}
 	temp = { "origin":[], "category":[], "weight":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "height":{"male":{"amin":0, "amax":0}, "female":{"amin":0, "amax":0}}, "coat":{"length":None, "description":None}, "color":{"feature":[], "colors":[], "description":None}, "littersize":{"amin":0, "amax":0}, "lifespan":{"amin":0, "amax":0} }
 	for petname in j.keys():
 		score = simscore(petA = j[petname], petB = sim, sim = temp, is2nd = False)
+		while score in simlist:
+			score += 0.01
 		simlist[score] = petname
 
-	for result in simlist:
-		print result
-	#TODO
+	sortedkey = sorted(simlist, reverse = True)
+	sorteddic = {}
+	for i in range(3):
+		sorteddic[sortedkey[i]] = simlist[sortedkey[i]]
+
+	return sorteddic
 
 def main():
 	jdict = readjson()
-	ipresult = ["beagle", "boxer", "chihuahua"]
-	sim2 = similarity(jdict, list = ipresult)
-	simlist = findsims(jdict, sim = sim2)
+
+	ipresult = ["beagle", "boxer", "chihuahua"] #test input
+	sim2 = similarity(jdict, list = ipresult) #sim2 = shared features between these 3 pets
+	if sim2 == -1:
+		return
+	print sim2
+	simlist = findsims(jdict, sim = sim2)#find other similar pets with highest sim-score
+	print simlist
 
 
 if __name__== '__main__':
