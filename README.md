@@ -5,6 +5,10 @@ Crawler.py
 keywords according to petlist.txt. For ambiguous name, I add dog/cat as suffix. 
 10950 pages in totall, stored in 0_data/index - 36_data/index
 
+Compare.py
+----------------------
+For a given list of 3 pets, calculate similar-score according to its trais information in \breeds.jason. output the similarity features or give a list of other similar pets
+
 invertedindex
 ---------------------
  - Gernerated by Microsoft Visual Studio
