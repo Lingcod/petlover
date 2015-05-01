@@ -62,7 +62,10 @@
 			"united states",
 			"united kingdom"
 		],
-		"category": "terrier",
+		"category": [
+			"terrier",
+			"dog"
+		],
 		"weight": {
 			"male": {
 				"amin": 35,
@@ -108,7 +111,10 @@
 			"united kingdom",
 			"france"
 		],
-		"category": "hound",
+		"category": [
+			"hound",
+			"dog"
+		],
 		"weight": {
 			"male": {
 				"amin": 55,
@@ -161,7 +167,10 @@
 		"origin": [
 			"united kingdom"
 		],
-		"category": "hound",
+		"category": [
+			"hound",
+			"dog"
+		],
 		"weight": {
 			"male": {
 				"amin": 22,
@@ -218,7 +227,8 @@
 		"category": [
 			"working",
 			"utility",
-			"guardian"
+			"guardian",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -269,7 +279,10 @@
 		"origin": [
 			"mexico"
 		],
-		"category": "toy",
+		"category": [
+			"toy",
+			"dog"
+		],
 		"weight": {
 			"male": {
 				"amin": 4,
@@ -326,7 +339,8 @@
 		],
 		"category": [
 			"sporting",
-			"gundog"
+			"gundog",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -384,7 +398,8 @@
 		],
 		"category": [
 			"sporting",
-			"gundog"
+			"gundog",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -439,7 +454,8 @@
 		],
 		"category": [
 			"working",
-			"utility"
+			"utility",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -492,6 +508,7 @@
 			"cuba"
 		],
 		"category": [
+			"dog",
 			"toy"
 		],
 		"weight": {
@@ -537,6 +554,7 @@
 			"japan"
 		],
 		"category": [
+			"dog",
 			"toy"
 		],
 		"weight": {
@@ -591,6 +609,7 @@
 			"netherlands"
 		],
 		"category": [
+			"dog",
 			"non-sporting",
 			"utility"
 		],
@@ -648,6 +667,7 @@
 			"germany"
 		],
 		"category": [
+			"dog",
 			"working",
 			"utility"
 		],
@@ -700,6 +720,7 @@
 			"germany"
 		],
 		"category": [
+			"dog",
 			"toy"
 		],
 		"weight": {
@@ -755,7 +776,8 @@
 		],
 		"category": [
 			"working",
-			"utility"
+			"utility",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -810,6 +832,7 @@
 			"germany"
 		],
 		"category": [
+			"dog",
 			"toy"
 		],
 		"weight": {
@@ -869,6 +892,7 @@
 			"china"
 		],
 		"category": [
+			"dog",
 			"toy"
 		],
 		"weight": {
@@ -923,6 +947,7 @@
 			"switzerland"
 		],
 		"category": [
+			"dog",
 			"working",
 			"utility"
 		],
@@ -977,6 +1002,7 @@
 			"russia"
 		],
 		"category": [
+			"dog",
 			"working",
 			"utility"
 		],
@@ -1030,6 +1056,7 @@
 			"united kingdom"
 		],
 		"category": [
+			"dog",
 			"terrier"
 		],
 		"weight": {
@@ -1085,7 +1112,8 @@
 		],
 		"category": [
 			"non-sporting",
-			"utility"
+			"utility",
+			"dog"
 		],
 		"weight": {
 			"male": {
@@ -1139,6 +1167,7 @@
 			"united kingdom"
 		],
 		"category": [
+			"dog",
 			"terrier"
 		],
 		"weight": {
@@ -1195,6 +1224,7 @@
 			"ireland"
 		],
 		"category": [
+			"dog",
 			"terrier"
 		],
 		"weight": {
@@ -1248,6 +1278,7 @@
 			"united kingdom"
 		],
 		"category": [
+			"dog", 
 			"toy"
 		],
 		"weight": {

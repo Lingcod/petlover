@@ -1,14 +1,67 @@
-# read traits information from breeds.json
-# find same properties of specific 3 pets
-# calculate similarity score
+"""
+compare.py
 
+this script reads traits information from breeds.json, finds same properties of specific 3 pets, and 
+calculate similarity score
+"""
 import json
+import pickle
+import pandas as pd
 
-def readjson():
-	f = open('breeds.json')
-	j = json.loads(f.read())
-	return j
+def read_breed_json(filename):
+    # the function that reads the json file that contains the information about the 37 different
+    # pets and returns the json object 
+    # Paramter
+    # filename : the json filename
+    # Returns
+    # j : the dictionary that contains the json structure of the pet breeds
 
+    f = open(filename)
+    j = json.loads(f.read())
+    return j
+
+
+def read_image_reg_output_json(filename):
+    # the function that reads the json file that contains the result of the image recognitio
+    # Paramter
+    # filename : the json filename
+    # Returns
+    # j : the dictionary that contains the json structure of the pet breeds
+
+    output = open(filename, 'rb')
+    obj_dict = pickle.load(output) 
+    return obj_dict
+
+
+def find_pets_by_actual_name(breeds_score_dict, name_of_pet_ls, breeds_df_index):
+    
+    for i in range(0, len(breeds_df_index)):
+        for a_word in name_of_pet_ls:
+            if (a_word in breeds_df_index[i]):
+                pet_label = breeds_df_index[i]
+                breeds_score_dict[pet_label] = breeds_score_dict[pet_label] + 2
+    
+
+def find_pets_by_category(breeds_score_dict, name_of_pet_ls, breeds_df_category):
+    
+    for i in range(0, len(breeds_df_category)):
+        for a_word in name_of_pet_ls:
+            if (breeds_df_category.iloc[i] != None):
+                if (a_word in breeds_df_category.iloc[i]):
+                    pet_label = breeds_df_category.index[i]
+                    breeds_score_dict[pet_label] = breeds_score_dict[pet_label] + 1
+
+
+def find_pets_by_color(breeds_score_dict, name_of_pet_ls, breeds_df_color):
+    
+    for i in range(0, len(breeds_df_color)):
+        for a_word in name_of_pet_ls:
+            if (breeds_df_color.iloc[i] != None):
+                if (breeds_df_color.iloc[i]['colors']!=None):
+                    if (a_word in breeds_df_color.iloc[i]['colors']):
+                        pet_label = breeds_df_color.index[i]
+                        breeds_score_dict[pet_label] = breeds_score_dict[pet_label] + 1
+    
 
 #return -1 if 1.len(list)!=3, 2.one or more petname can't be find in json, 3.a mix of dog and cat in list
 def similarity(j, list):
@@ -144,17 +197,29 @@ def findsims(j, sim):
 
 	return sorteddic
 
+
 def main():
-	jdict = readjson()
+    breeds_json = read_breed_json('breeds.json')
+    breeds_df = pd.DataFrame.from_dict(breeds_json, orient='index')
+    image_recognition_output_json = read_image_reg_output_json('image_recognition_result.json')
+    
+    name_of_pet_ls = image_recognition_output_json['name'].split(" ")
+    
+    breeds_score_dict = pd.Series([0]*len(breeds_df.index), index = breeds_df.index).to_dict()
+    
+    find_pets_by_actual_name(breeds_score_dict, name_of_pet_ls, breeds_df.index)
+    find_pets_by_category(breeds_score_dict, name_of_pet_ls, breeds_df['category'])
+    find_pets_by_color(breeds_score_dict, name_of_pet_ls, breeds_df['color'])
+    
+    top_three_pets = sorted(breeds_score_dict.iteritems(), key=lambda (k, v): (-v, k))[:3]
+    ipresult = []
+    for a_tuple in top_three_pets:
+        ipresult.append(a_tuple[0])
+        
+    print ipresult
+    
+    sim2 = similarity(breeds_json, list = ipresult)
+    simlist = findsims(breeds_json, sim = sim2)
 
-	ipresult = ["beagle", "boxer", "chihuahua"] #test input
-	sim2 = similarity(jdict, list = ipresult) #sim2 = shared features between these 3 pets
-	if sim2 == -1:
-		return
-	print sim2
-	simlist = findsims(jdict, sim = sim2)#find other similar pets with highest sim-score
-	print simlist
-
-
-if __name__== '__main__':
-    main()  
+if __name__ == "__main__":
+    main()
