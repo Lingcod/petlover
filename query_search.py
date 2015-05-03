@@ -1,9 +1,7 @@
 """
-    Chang Hyun Lee
-    N12218805
-    CS6913 - HW03 - search.py
-
-    The APIs for query search and evaluation
+    query_search.py
+    This script includes the codebase for searching the query as well as evaluating it. It uses the techniques
+    learned in the assignment such as BM25 and heap function.
 """
 
 import os
