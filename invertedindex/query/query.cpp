@@ -118,14 +118,14 @@ int initD2U(char* d2uDIR, map<long int, urlsize>* d2uData)
 	return avg;
 }
 
-int main()
+
+void get_result(char* query)
 {
 	map<string, lexicontuple>* lexData = new map<string, lexicontuple>;
 	map<long int, urlsize>* d2uData = new map<long int, urlsize>;
 	char* lexDIR;
 	char* d2uDIR;
 	long double avgSize;
-	char* query = new char[512];
 	clock_t start, finish;
 
 	start = clock();
@@ -150,8 +150,6 @@ int main()
 		shared_ptr<vector<long int>> didCollection = make_shared<vector<long int>>(); //all docids meet requirement	
 		shared_ptr<map<long double, string>> results = make_shared<map<long double, string>>(); //final results
 
-		cout << "Input your query:\n";
-		cin.getline(query, 512);
 
 		char* token;
 		token = strtok(query, " ");

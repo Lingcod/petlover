@@ -1,7 +1,5 @@
 """
-compare.py
-
-
+	compare.py
 
 """
 import json
@@ -19,19 +17,6 @@ def read_breed_json(filename):
     f = open(filename)
     j = json.loads(f.read())
     return j
-
-
-def read_image_reg_output_json(filename):
-    # the function that reads the json file that contains the result of the image recognitio
-    # Paramter
-    # filename : the json filename
-    # Returns
-    # j : the dictionary that contains the json structure of the pet breeds
-
-    output = open(filename, 'rb')
-    obj_dict = pickle.load(output) 
-    return obj_dict
-
 
 #return -1 if 1.len(list)!=3, 2.one or more petname can't be find in json, 3.a mix of dog and cat in list
 def similarity(j, list):
