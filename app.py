@@ -13,7 +13,7 @@
 import image_recognition
 import compare
 import search_pets
-import search
+import query_search
 import sys
 import pandas as pd
 import time
@@ -69,7 +69,7 @@ k = 20
 start_time = time.clock()
 document_hashtable_filename = ""
 directory_to_inverted_index_files = ""
-search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
+query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
 end_time = time.clock()
 print "run-time : " + str((end_time - start_time)) + " seconds."    
 
