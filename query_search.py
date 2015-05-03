@@ -365,14 +365,14 @@ def evaluateQuery(inverted_index, doc_hashtable, k):
               
     return a_heap
 
-def search(query, k, how_many):
+def search(query, k, how_many, doc_hashtable_filename, inverted_index_files_directory):
     # the main function for search query and display the relevant document pages
 
     # open the file containing document hash table and return the document hash table
-    doc_hashtable = openTheDocHashTable("./final_inverted_index_files/doc_hashtable.txt")
+    doc_hashtable = openTheDocHashTable(doc_hashtable_filename)
 
     # get the necessary inverted index that contains only the terms in the query
-    inverted_index = getNeededInvertedLists(query,'./final_inverted_index_files/')
+    inverted_index = getNeededInvertedLists(query,inverted_index_files_directory)
 
     # return the heap that has the scores of the top k documents
     a_heap = evaluateQuery(inverted_index, doc_hashtable, k)
