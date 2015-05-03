@@ -5,7 +5,7 @@
     It takes the image input using its image filename. Then, it goes through the search engine powered by
     CamFind API and retrieves the terms there. Using those terms, the code comapres the information about
     the pet breeds with the terms, and the one that contains the most matched terms gets the highest score.
-    Given the top three selected pets, the user chooses one of them, and the C++ query search code will be
+    Given the top three selected pets, the user chooses one of them, and the python query search code will be
     used to return the search result.
 
 """
@@ -13,8 +13,10 @@
 import image_recognition
 import compare
 import search_pets
+import search
 import sys
 import pandas as pd
+import time
 
 # call the search result from CamFind API
 search_result = image_recognition.get_image_result(sys.argv[1]) # sys.argv[1] == the name of image input file
@@ -47,76 +49,34 @@ while (which_pet_to_look_at not in ipresult):
 
 
 # evaluate the query using the search query terms
+'''
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+LOOK AT THIS PART!!!!!!!!!!!!!!!!!!
+
+YOU NEED TO PROVIDE THE FILENAME OF THE DOCUMENT HASHTABLE AND THE DIRECTORY TO THE FOLDER WHERE YOU HAVE
+THE INVERTED INDEX FILES. 
+e.g. document hashtable : doc_hashtable.txt
+  inverted index file list : ./inverted_index_foldername/  (you must put / at both ends)
+
+I know because we don't have time we have to use this, but just run it, and if it works, that's fine.
+
+I'm not sure about how you are going to use the similarity 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'''
+how_many = 10
+k = 20
+start_time = time.clock()
+document_hashtable_filename = ""
+directory_to_inverted_index_files = ""
+search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
+end_time = time.clock()
+print "run-time : " + str((end_time - start_time)) + " seconds."    
 
 
 # estimate the similarity score.
 sim2 = compare.similarity(breeds_json, list = ipresult)
 simlist = compare.findsims(breeds_json, sim = sim2)
 
+
 # using the list of similar breeds, 
-
-
-
-
-
-"""
-import os
-from flask import Flask, render_template, request, jsonify
-
-import unirest
-from time import sleep
-
-
-app = Flask(__name__)
-
-@app.route('/')
-def main():
-    return render_template('form_submit.html')
-
-@app.route('/search', methods=['POST'])
-def search():
- 
-    if request.method == "POST":
- 
-        a_file = request.files['image_file']
-        
-        try:
-
-            response = unirest.post("https://camfind.p.mashape.com/image_requests",
-                 headers={
-                "X-Mashape-Key": "rkv1zmf6dgmshNzA9gAFDc13pB6Qp139uVejsnKlCuSjdse91c"
-                },
-                  params={
-                "image_request[image]": a_file,
-                "image_request[language]": "en",
-                "image_request[locale]": "en_US"
-                }
-              )
-              
-
-            api_key = 'JAPQbhGVyMmshUB7QBAbnO0Xsxqcp1T10Fbjsn0LR4gjoptFqH'
-            token = response.body['token']
-
-            sleep(25)
-
-            response_2 = unirest.get("https://camfind.p.mashape.com/image_responses/" + response.body['token'],
-                  headers={
-                      "X-Mashape-Key": "rkv1zmf6dgmshNzA9gAFDc13pB6Qp139uVejsnKlCuSjdse91c",
-                      "Accept": "application/json"
-                  }
-            )
-
-            a = open("image_recognition_result.json", 'w')
-            pickle.dump(response_2.body, a)
-            a.close()
-
-        except:
- 
-            # return error
-            jsonify({"sorry": "Sorry, no results! Please try again."}), 500
-
-"""
-
-
-if __name__ == '__main__':
-    app.run()
