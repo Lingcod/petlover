@@ -44,10 +44,17 @@ ipresult = []
 for a_tuple in top_three_pets:
     ipresult.append(a_tuple[0])
 
-which_pet_to_look_at = raw_input('which pet do you want to look at? ' + str(ipresult) + " ")
+
+# estimate the similarity score.
+sim2 = compare.similarity(breeds_json, list = ipresult)
+simlist = compare.findsims(breeds_json, sim = sim2)
+
+
+# using the list of similar breeds, use the result from similarity list to find the documents
+which_pet_to_look_at = raw_input('which pet do you want to look at? ' + str(simlist) + " ")
 
 while (which_pet_to_look_at not in ipresult):
-  which_pet_to_look_at = raw_input('Not in the list. Try it again. ' + str(ipresult) + " ")
+  which_pet_to_look_at = raw_input('Not in the list. Try it again. ' + str(simlist) + " ")
 
 
 # evaluate the query using the search query terms
@@ -73,12 +80,4 @@ document_hashtable_filename = ""
 directory_to_inverted_index_files = ""
 query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
 end_time = time.clock()
-print "run-time : " + str((end_time - start_time)) + " seconds."    
-
-
-# estimate the similarity score.
-sim2 = compare.similarity(breeds_json, list = ipresult)
-simlist = compare.findsims(breeds_json, sim = sim2)
-
-
-# using the list of similar breeds, 
+print "run-time : " + str((end_time - start_time)) + " seconds."  
