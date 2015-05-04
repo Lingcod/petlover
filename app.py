@@ -21,6 +21,8 @@ import time
 # call the search result from CamFind API
 search_result = image_recognition.get_image_result(sys.argv[1]) # sys.argv[1] == the name of image input file
 
+print "image search result " + str(search_result)
+
 # call the json file 
 breeds_json = compare.read_breed_json('breeds.json')
 breeds_df = pd.DataFrame.from_dict(breeds_json, orient='index')
