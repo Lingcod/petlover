@@ -7,7 +7,7 @@
 
 #define iiChunk 20971520 //20MB for 1 inverted index file
 
-#define tt_fileNum 13
+#define tt_fileNum 37
 #define folderNum 1
 
 unsigned long int HEAPCHUNK = 838860800; //800MB

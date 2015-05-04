@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mergesort", "mergesort\merg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "query", "query\query.vcxproj", "{67AD2223-E611-4E2D-BB71-55B4ACEA21FE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PyQuery", "PyQuery\PyQuery.vcxproj", "{42C69717-2833-46C2-80A1-AFF78DEEB9FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{67AD2223-E611-4E2D-BB71-55B4ACEA21FE}.Debug|Win32.Build.0 = Debug|Win32
 		{67AD2223-E611-4E2D-BB71-55B4ACEA21FE}.Release|Win32.ActiveCfg = Release|Win32
 		{67AD2223-E611-4E2D-BB71-55B4ACEA21FE}.Release|Win32.Build.0 = Release|Win32
+		{42C69717-2833-46C2-80A1-AFF78DEEB9FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42C69717-2833-46C2-80A1-AFF78DEEB9FB}.Debug|Win32.Build.0 = Debug|Win32
+		{42C69717-2833-46C2-80A1-AFF78DEEB9FB}.Release|Win32.ActiveCfg = Release|Win32
+		{42C69717-2833-46C2-80A1-AFF78DEEB9FB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
