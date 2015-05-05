@@ -80,8 +80,6 @@ start_time = time.clock()
 # directory_to_inverted_index_files = ""
 # query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
 import PyQuery
-# ipresult = ["beagle","chihuahua","boxer"]
-# simresult = ["japanese", "bengal", "sphynx"]
 PyQuery.petsearch(ipresult, simresult)
 end_time = time.clock()
 print "run-time : " + str((end_time - start_time)) + " seconds."  
