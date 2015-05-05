@@ -115,8 +115,9 @@ def simscore(petA, petB, sim, is2nd):
 	if petA["littersize"] and petB["littersize"]:
 		amin = max(petA["littersize"]["amin"], petB["littersize"]["amin"])
 		amax = min(petA["littersize"]["amax"], petB["littersize"]["amax"])
-		if amin > amax:
-			sim["littersize"] = None
+		if amin > amax or amin == 0:
+			sim["littersize"]["amin"] = 0
+			sim["littersize"]["amax"] = 0
 		else:
 			sim["littersize"]["amin"] = amin
 			sim["littersize"]["amax"] = amax
@@ -126,8 +127,9 @@ def simscore(petA, petB, sim, is2nd):
 	if petA["lifespan"] and petB["lifespan"]:
 		amin = max(petA["lifespan"]["amin"], petB["lifespan"]["amin"])
 		amax = min(petA["lifespan"]["amax"], petB["lifespan"]["amax"])
-		if amin > amax:
-			sim["lifespan"] = None
+		if amin > amax or amin == 0:
+			sim["lifespan"]["amin"] = 0
+			sim["lifespan"]["amax"] = 0
 		else:
 			sim["lifespan"]["amin"] = amin
 			sim["lifespan"]["amax"] = amax

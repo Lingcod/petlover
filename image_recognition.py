@@ -19,7 +19,7 @@ def get_image_result(image_filename):
     # Returns
     # response_2.body : the dictionary containing the name of the search term as well as the status
     # of the response
-    
+    unirest.timeout(300)
     response = unirest.post("https://camfind.p.mashape.com/image_requests",
          headers={
         "X-Mashape-Key": "rkv1zmf6dgmshNzA9gAFDc13pB6Qp139uVejsnKlCuSjdse91c"
@@ -30,7 +30,6 @@ def get_image_result(image_filename):
         "image_request[locale]": "en_US"
         }
       )
-      
 
     api_key = 'JAPQbhGVyMmshUB7QBAbnO0Xsxqcp1T10Fbjsn0LR4gjoptFqH'
     token = response.body['token']

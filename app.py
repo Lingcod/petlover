@@ -13,7 +13,7 @@
 import image_recognition
 import compare
 import search_pets
-import query_search
+#import query_search
 import sys
 import pandas as pd
 import time
@@ -51,10 +51,10 @@ simlist = compare.findsims(breeds_json, sim = sim2)
 
 
 # using the list of similar breeds, use the result from similarity list to find the documents
-which_pet_to_look_at = raw_input('which pet do you want to look at? ' + str(simlist) + " ")
+# which_pet_to_look_at = raw_input('which pet do you want to look at? ' + str(simlist) + " ")
 
-while (which_pet_to_look_at not in ipresult):
-  which_pet_to_look_at = raw_input('Not in the list. Try it again. ' + str(simlist) + " ")
+# while (which_pet_to_look_at not in ipresult):
+#   which_pet_to_look_at = raw_input('Not in the list. Try it again. ' + str(simlist) + " ")
 
 
 # evaluate the query using the search query terms
@@ -76,8 +76,12 @@ I'm not sure about how you are going to use the similarity
 how_many = 10
 k = 20
 start_time = time.clock()
-document_hashtable_filename = ""
-directory_to_inverted_index_files = ""
-query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
+# document_hashtable_filename = ""
+# directory_to_inverted_index_files = ""
+# query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
+import PyQuery
+# ipresult = ["beagle","chihuahua","boxer"]
+# simresult = ["japanese", "bengal", "sphynx"]
+PyQuery.petsearch(ipresult, simresult)
 end_time = time.clock()
 print "run-time : " + str((end_time - start_time)) + " seconds."  
