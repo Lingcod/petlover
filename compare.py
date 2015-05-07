@@ -148,8 +148,8 @@ def findsims(j, sim):
 		simlist[score] = petname
 
 	sortedkey = sorted(simlist, reverse = True)
-	sorteddic = {}
+	sorteddic = []
 	for i in range(3):
-		sorteddic[sortedkey[i]] = simlist[sortedkey[i]]
+		sorteddic.append(simlist[sortedkey[i]])
 
 	return sorteddic

@@ -98,7 +98,7 @@ int initD2U(char* d2uDIR, map<long int, urlsize>* d2uData)
 	int fn;
 
 	fn = 1;
-	sprintf_s(filename, "%s\\d2u.txt", d2uDIR);
+	sprintf_s(filename, "%s/d2u.txt", d2uDIR);
 
 	for (int i = 0; i < fn; i++)
 	{
@@ -119,7 +119,7 @@ int initD2U(char* d2uDIR, map<long int, urlsize>* d2uData)
 				avg = temp / 2;
 			}
 		}
-		sprintf_s(filename, "%s\\d2u_%d00.txt", d2uDIR, i + 1);
+		sprintf_s(filename, "%s/d2u_%d00.txt", d2uDIR, i + 1);
 		d2uStream.close();
 	}
 	return avg;
@@ -134,8 +134,8 @@ void petsearch(list ipresult, list simresult) {
 	long double avgSize;
 	char* query = new char[512];
 
-	lexDIR = "E:\\Downloads\\pets\\Pages\\lexicon.txt";
-	d2uDIR = "E:\\Downloads\\pets\\Pages";
+	lexDIR = "/Users/ShawnPan/Dropbox/ShitPissFart/petlover/Pages/lexicon.txt";
+	d2uDIR = "/Users/ShawnPan/Dropbox/ShitPissFart/petlover/Pages";
 
 	initLexicon(lexDIR, lexData);
 	avgSize = initD2U(d2uDIR, d2uData);
@@ -204,7 +204,7 @@ void petsearch(list ipresult, list simresult) {
 			string str(temp);
 			term oneTerm;
 			oneTerm.word = str;
-			oneTerm.indexDIR = "E:\\Downloads\\pets\\Pages\\index";
+			oneTerm.indexDIR = "/Users/ShawnPan/Dropbox/ShitPissFart/petlover/Pages/index";
 
 			int r = oneTerm.openList(lexData);
 			if (r == -1)

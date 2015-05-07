@@ -9,7 +9,7 @@ int term::openList(map<string, lexicontuple>* lexData)
 
 	//find inverted index, then store into map
 	char iiFilename[512];
-	sprintf_s(iiFilename, "%s\\merged2nd_%d.txt", indexDIR, iiFileNum);
+	sprintf_s(iiFilename, "%s/merged2nd_%d.txt", indexDIR, iiFileNum);
 	ifstream indexStream;
 	indexStream.open(iiFilename);
 	indexStream.seekg(offset);

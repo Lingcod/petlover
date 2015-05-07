@@ -30,11 +30,11 @@ def get_image_result(image_filename):
         "image_request[locale]": "en_US"
         }
       )
-   print "Response: ",response
-   print "Code: ", response.code
-   print "Headers: ", response.headers
-   print "Body: ", response.body
-   print "Raw_body: ", response.raw_body
+    print "Response: ", response
+    print "Code: ", response.code
+    print "Headers: ", response.headers
+    print "Body: ", response.body
+    print "Raw_body: ", response.raw_body
 
     api_key = 'JAPQbhGVyMmshUB7QBAbnO0Xsxqcp1T10Fbjsn0LR4gjoptFqH'
     token = response.body['token']

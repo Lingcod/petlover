@@ -44,11 +44,11 @@ ipresult = []
 for a_tuple in top_three_pets:
     ipresult.append(a_tuple[0])
 
-
+print ipresult
 # estimate the similarity score.
 sim2 = compare.similarity(breeds_json, list = ipresult)
 simlist = compare.findsims(breeds_json, sim = sim2)
-
+print simlist
 
 # using the list of similar breeds, use the result from similarity list to find the documents
 # which_pet_to_look_at = raw_input('which pet do you want to look at? ' + str(simlist) + " ")
@@ -80,6 +80,6 @@ start_time = time.clock()
 # directory_to_inverted_index_files = ""
 # query_search.search(which_pet_to_look_at, k, how_many, document_hashtable_filename, directory_to_inverted_index_files)
 import PyQuery
-PyQuery.petsearch(ipresult, simresult)
+PyQuery.petsearch(ipresult, simlist)
 end_time = time.clock()
 print "run-time : " + str((end_time - start_time)) + " seconds."  
